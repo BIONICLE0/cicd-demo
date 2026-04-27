@@ -136,7 +136,6 @@ function App() {
 export default App;
 ```
 
-
 ### 6. 起動手順
 ```bash
 # 起動

@@ -1,6 +1,9 @@
 {
   "name": "react-frontend",
-  "dockerComposeFile": "../../docker-compose.yml",
+  "dockerComposeFile": [
+    "../../docker-compose.yml",
+    "../../docker-compose-dev-container.yml"
+  ],
   "service": "frontend",
   "workspaceFolder": "/workspace",
   "customizations": {
