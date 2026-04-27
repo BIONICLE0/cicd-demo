@@ -1,0 +1,22 @@
+services:
+  frontend:
+    image: node:20
+    container_name: frontend-cicd-demo
+    volumes:
+      - ./frontend:/workspace
+    working_dir: /workspace/app
+    command: sleep infinity
+    # command: sh -c "npm run dev"
+    ports:
+      - "3000:3000"
+
+  backend:
+    image: maven:3.9-eclipse-temurin-17
+    container_name: backend-cicd-cdmo
+    volumes:
+      - ./backend:/workspace
+    working_dir: /workspace/demo
+    command: sleep infinity
+    # command: mvn spring-boot:run
+    ports:
+      - "8080:8080"
