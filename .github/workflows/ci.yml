@@ -11,7 +11,7 @@ jobs:
 
     defaults:
       run:
-        working-directory: backend
+        working-directory: backend/demo
 
     steps:
       - name: Checkout
@@ -37,7 +37,7 @@ jobs:
 
     defaults:
       run:
-        working-directory: frontend
+        working-directory: frontend/app
 
     steps:
       - name: Checkout
@@ -53,7 +53,7 @@ jobs:
 
       - name: Build
         run: npm run build
-        
+
       - name: Upload frontend build
         uses: actions/upload-artifact@v4
         with:
