@@ -3,6 +3,7 @@
 ### 1. ディレクトリ作成  
 cicd-demo/  
 ├──.devcontainer  
+├──.github/
 ├── backend/  
 ├── frontend/  
 └── docker-compose.yml
@@ -10,6 +11,8 @@ cicd-demo/
 ### 2. docker-compose.yml作成
 
 ### 3. .devcontainer作成
+
+### 4. .github/workflows/ci.yml作成
 
 ## バックエンド
 
