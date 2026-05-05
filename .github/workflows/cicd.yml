@@ -8,6 +8,10 @@ jobs:
   backend:
     runs-on: ubuntu-latest
 
+    permissions:   # ← ★これを追加
+      id-token: write
+      contents: read
+
     defaults:
       run:
         working-directory: backend/demo
